@@ -30,9 +30,6 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Connected to Database'))
   .catch(err => console.error('Database Connection Error', err));
 
-// For FCC testing purposes
-fccTestingRoutes(app);
-
 // Routing for API 
 apiRoutes(app);  
     
